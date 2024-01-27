@@ -7,8 +7,17 @@ img {
 }
 
 figure {
-	margin: 0;
+    width: calc(50% - 20px); /* Two columns with margin between them */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+    margin-bottom: 20px; /* Add margin at the bottom of each figure */
+  }
+
+  /* Adjust the width for the first three figures to occupy the left column */
+  figure:nth-child(-n+3) {
+    width: calc(33.333% - 20px);
+  }
 }
+
 @media only screen and (min-width: 600px) {
   body{background-color: pink;
   font-size: 1.23vw;
