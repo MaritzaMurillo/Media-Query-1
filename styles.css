@@ -1,12 +1,20 @@
-body {}
-h1 {}
-h2 {}
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: pink;
+    font-size: 1.23vw;
+    margin: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-img {
-	max-width: 100%;
-}
+  h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
-figure {
+  figure {
     width: calc(50% - 20px); /* Two columns with margin between them */
     box-sizing: border-box; /* Include padding and border in the width calculation */
     margin-bottom: 20px; /* Add margin at the bottom of each figure */
@@ -16,18 +24,4 @@ figure {
   figure:nth-child(-n+3) {
     width: calc(33.333% - 20px);
   }
-}
-
-@media only screen and (min-width: 600px) {
-  body{background-color: pink;
-  font-size: 1.23vw;
-  margin: 0 20px;
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: space-between;
-  
-  
-  }
-  
-
 }
